@@ -1,0 +1,212 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 35px;
+    background-color: #3a2d2d;
+    color: #f5eee8;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.wireframe-title {
+    width: 55%;
+    margin: 0 auto 35px auto;
+    padding: 35px 20px;
+
+    border: 5px solid #cbb99b;
+    border-radius: 65px;
+
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   MAIN DASHBOARD
+========================= */
+
+.dashboard {
+    width: 82%;
+    margin: auto;
+
+    border: 12px solid #cbb99b;
+    padding: 25px 35px;
+
+    background-color: #3a2d2d;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    text-align: center;
+    padding-bottom: 25px;
+
+    border-bottom: 4px solid #f5eee8;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+.overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+
+    font-size: 27px;
+}
+
+
+/* =========================
+   ROOMS
+========================= */
+
+.rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.room {
+    padding: 25px 50px 20px 50px;
+    min-height: 270px;
+}
+
+.room:first-child {
+    border-right: 3px solid #f5eee8;
+}
+
+.room h2 {
+    margin: 0 0 12px 0;
+
+    text-align: center;
+
+    font-size: 30px;
+    font-weight: normal;
+}
+
+
+/* =========================
+   DEVICES
+========================= */
+
+.device {
+    display: grid;
+    grid-template-columns: 55px 1fr 70px;
+    align-items: center;
+
+    margin: 8px 0;
+
+    font-size: 27px;
+}
+
+.icon {
+    font-size: 32px;
+}
+
+.device span:last-child {
+    text-align: left;
+}
+
+
+/* =========================
+   SECURITY
+========================= */
+
+.security {
+    border-top: 4px solid #f5eee8;
+    padding-top: 15px;
+}
+
+.security h2 {
+    margin: 0 0 20px 0;
+
+    text-align: center;
+
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.security-items {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.security-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 27px;
+}
+
+.security-item span:first-child {
+    font-size: 32px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .wireframe-title {
+        width: 90%;
+        font-size: 25px;
+    }
+
+    .dashboard {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .overview {
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    .rooms {
+        grid-template-columns: 1fr;
+    }
+
+    .room:first-child {
+        border-right: none;
+        border-bottom: 3px solid #f5eee8;
+    }
+
+    .security-items {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .device {
+        font-size: 21px;
+    }
+}
